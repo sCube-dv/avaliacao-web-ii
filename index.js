@@ -1,18 +1,18 @@
-import batalha from './modules/batalha.js' 
+import batalha from './modules/batalha.js'
 
 import { fortaleceAtaque } from './callbacks/fortaleceAtaque.js'
-import { fortaleceTotal } from './callbacks/fortaleceTotal.js'  
+import { fortaleceTotal } from './callbacks/fortaleceTotal.js'
 
 
 /* criação objetos Dragão e Guerreiro */
-M1 = {
+const M1 = {
     nome: 'Dragão',
     vida: 100,
     ataque: 80,
     defesa: 60
 }
 
-M2 = {
+const M2 = {
     nome: 'Guerreiro',
     vida: 100,
     ataque: 70,
@@ -38,4 +38,4 @@ const fortaleceDefesa = (monstro) => {
 }
 
 
-fortaleceDefesa (M2)
+fortaleceDefesa(M2)
