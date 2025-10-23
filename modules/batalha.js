@@ -24,4 +24,4 @@ const fortalecer = (monstro, tipoFortalecer) => {
 
 
 
-export default { atacar, curar, fortalecer }
+export default batalha
