@@ -1,4 +1,6 @@
 export const fortaleceAtaque = (monstro) => {
     monstro.ataque = monstro.ataque + (monstro.ataque * 0.3)
-    return monstro
+    console.log('Ataque fortalecido!')
+    console.log('Novo valor de ataque: ' + monstro.ataque)
+    //return monstro
 }

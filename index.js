@@ -16,7 +16,7 @@ const M2 = {
     nome: 'Guerreiro',
     vida: 100,
     ataque: 70,
-    defesa: 80
+    defesa: 85
 }
 
 /* Dragão ataca Guerreiro */
@@ -35,7 +35,8 @@ batalha.fortalecer(M1, fortaleceTotal)
 /* fortalecimento de defesa */
 const fortaleceDefesa = (monstro) => {
     monstro.defesa = monstro.defesa + (monstro.defesa * 0.25)
+    console.log('Defesa fortalecida!')
+    console.log('Monstro: ' + monstro.nome + '\nNovo valor de defesa: ' + monstro.defesa)
 }
 
-
-fortaleceDefesa(M2)
+batalha.fortalecer(M2, fortaleceDefesa)
