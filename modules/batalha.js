@@ -16,7 +16,7 @@ const atacar = (m1, m2) => {
 /* função curar */
 const curar = (monstro, cura) => {
     monstro.vida = cura
-    return monstro
+    console.log('Monstro: ' + monstro.nome + ' | Vida restaurada para: ' + monstro.vida)
 }
 
 /* função fortalecer */
@@ -25,4 +25,4 @@ const fortalecer = (monstro, tipoFortalecer) => {
 }
 
 
-export default { atacar, fortalecer }
+export default { atacar, curar, fortalecer }

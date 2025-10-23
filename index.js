@@ -32,11 +32,14 @@ batalha.fortalecer(M2, fortaleceAtaque)
 /* Fortalece ataque Dragão */
 batalha.fortalecer(M1, fortaleceTotal)
 
+/* teste de cura */
+batalha.curar(M1, 90)
+
 /* fortalecimento de defesa */
 const fortaleceDefesa = (monstro) => {
     monstro.defesa = monstro.defesa + (monstro.defesa * 0.25)
     console.log('Defesa fortalecida!')
-    console.log('Monstro: ' + monstro.nome + '\nNovo valor de defesa: ' + monstro.defesa)
+    console.log('Monstro: ' + monstro.nome + ' | Novo valor de defesa: ' + monstro.defesa)
 }
 
 batalha.fortalecer(M2, fortaleceDefesa)
